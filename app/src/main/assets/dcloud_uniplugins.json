@@ -1,0 +1,14 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "LbViedeo",
+          "class": "io.dcloud.uniplugin.lebo.UniJCVideoWXComponent"
+        }
+      ]
+    }
+
+  ]
+}

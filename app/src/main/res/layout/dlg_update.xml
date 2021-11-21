@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_04"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="发现新版本"
+            android:textColor="#323232"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:text="更新内容："
+            android:textColor="#323232"
+            android:textSize="55px" />
+
+        <TextView
+            android:id="@+id/update_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#323232"
+            android:textSize="45px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="75px"
+            android:background="@color/tv_text_gray2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buildeexti_tv_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_01"
+                android:gravity="center"
+                android:text="以后再说"
+                android:textColor="#999999"
+                android:textSize="45px" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tv_text_gray2" />
+
+            <TextView
+                android:id="@+id/builderexit_tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_02"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="#F89B51"
+                android:textSize="45px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

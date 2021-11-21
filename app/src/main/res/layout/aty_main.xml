@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_splash" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60px"
+            android:paddingTop="60px"
+            android:background="@drawable/shape_05"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/down_loading"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="40px"
+                android:src="@drawable/ic_01" />
+
+            <ProgressBar
+                android:id="@+id/down_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="7dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:max="100"
+                android:progressDrawable="@drawable/pro_01"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/lb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60px"
+                android:gravity="center"
+                android:text="域名解析中..."
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"/>
+</RelativeLayout>

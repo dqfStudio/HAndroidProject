@@ -1,0 +1,31 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+//        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+    }
+
+}
+
+allprojects {
+    repositories {
+
+        flatDir {
+            dirs 'libs'
+            dirs project(':app').file('libs')
+        }
+
+        google()
+        jcenter()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,43 @@
+ext {
+
+
+    /**
+     * @debug                 日志打印开关,线上建议关掉 开启：true 关闭：false
+     * @versionName           app版本号 app版本更新
+     * @appletsVersionName    app小程序版本号 app小程序版本更新
+     * @developType           开发模式 FORMAL=生产 OUTEST=外测 INTEST=内测
+     * @applicationId         包名
+     * @appName               app名
+     * @appletsName           小程序名
+     * @inTestUrl             内测地址 developType=INTEST 生效
+     * @outTestUrl            外测地址 developType=OUTEST 生效
+     * @formalUrl             生产地址 developType=FORMAL 生效  多个地址用逗号隔开
+     * @secretKey             请求接口的密钥
+     * @weiboUrl              微博地址拉去域名*
+     *
+     *
+     */
+
+    android = [
+
+            debug             : false,
+            appName           : "乐乐",
+            versionName       : "1.2.9",
+            appletsVersionName: "1.2.17",
+            developType       : "FORMAL",
+            packName          : "lebo20210721",
+            appletsName       : "__UNI__ACBFAD8",
+            applicationId     : "com.funly.fishly.yhys",
+            inTestUrl         : "http://172.23.30.253:8010",
+            outTestUrl        : "http://43.129.186.219:8010",
+            formalUrl         : "http://api.sn8.info/",
+            secretKey         : "c5zKcW45KYGvrlCVEVvGysnjyCh3sg4r",
+            weiboUrl          : "https://m.weibo.cn/comments/hotflow?id=4641577341032015&mid=4641577341032015&max_id_type=0",
+
+    ]
+
+    manifestPlaceholders = [
+            "apk.applicationId": rootProject.ext.android.applicationId,
+    ]
+
+}

@@ -1,0 +1,17 @@
+include ':app'
+include ":autolayout"
+project(":autolayout").projectDir= new File("library/autolayout")
+
+include ":weex_videoplayer"
+project(":weex_videoplayer").projectDir= new File("library/weex_videoplayer")
+
+include ":jcvideoplayer-lib"
+project(":jcvideoplayer-lib").projectDir= new File("library/jcvideoplayer-lib")
+
+include ":uniplugin_component"
+project(":uniplugin_component").projectDir= new File("library/uniplugin_component")
+
+include ":superplayerkit"
+project(":superplayerkit").projectDir= new File("library/superplayerkit")
+
+rootProject.name = "yhvideo-android"

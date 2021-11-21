@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly 'com.alibaba:fastjson:1.2.56'
+    compileOnly fileTree(dir: '../../app/libs', include: ['uniMPSDK-release.aar'])
+    compileOnly fileTree(dir: '../../app/libs', include: ['uniapp-release.aar'])
+
+}
